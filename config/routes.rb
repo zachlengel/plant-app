@@ -15,6 +15,6 @@ Rails.application.routes.draw do
   get "/plants" => "plants#index" #View all plants
   get "/plants/:id" => "plants#show"  #View selected plant
 
-  post "/schedule" => "schedule#create" #Add plant to schedule
-  get "/schedule" => "scedule#index"    #View plant schedules
+  post "/schedules" => "schedules#create" #Add plant to schedule
+  get "/schedules" => "schedules#index"    #View plant schedules
 end
