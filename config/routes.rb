@@ -7,4 +7,14 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  post "/users" => "users#create" #create user
+
+  post "/sessions" => "sessions#create" #log in with password
+
+  get "/plants" => "plants#index" #View all plants
+  get "/plants/:id" => "plants#show"  #View selected plant
+
+  post "/schedule" => "schedule#create" #Add plant to schedule
+  get "/schedule" => "scedule#index"    #View plant schedules
 end
