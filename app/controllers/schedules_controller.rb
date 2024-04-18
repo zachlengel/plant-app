@@ -10,7 +10,6 @@ class SchedulesController < ApplicationController
     @schedule = Schedule.new(
     user_id: current_user.id,
     plant_id: params[:plant_id],
-    image_url: params[:image_url],
     watering_start_date: params[:watering_start_date]
   )
   if @schedule.save
