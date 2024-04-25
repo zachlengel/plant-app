@@ -7,3 +7,8 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Plant.create!({
+  name: "Basil", description: "An herb to add more flavor to your food.", amount_of_sun: 6, days_to_water: 5, image_url: "https://upload.wikimedia.org/wikipedia/commons/9/90/Basil-Basilico-Ocimum_basilicum-albahaca.jpg"
+  
+})
