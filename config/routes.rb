@@ -17,4 +17,6 @@ Rails.application.routes.draw do
 
   post "/schedules" => "schedules#create" #Add plant to schedule
   get "/schedules" => "schedules#index"    #View plant schedules
+  patch "/schedules" => "schedules#update"
+  delete "/schedules" => "schedules#destroy"
 end

@@ -8,7 +8,7 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-Plant.create!({
-  name: "Basil", description: "An herb to add more flavor to your food.", amount_of_sun: 6, days_to_water: 5, image_url: "https://upload.wikimedia.org/wikipedia/commons/9/90/Basil-Basilico-Ocimum_basilicum-albahaca.jpg"
-  
+Plant.create!(
+  {
+  name: "Marigold", description: "A tall yellow or orange plant with a bushy flower.", amount_of_sun: 6, days_to_water: 6, image_url: "https://cdn.britannica.com/76/118076-050-756CD4F5/French-marigold.jpg"
 })

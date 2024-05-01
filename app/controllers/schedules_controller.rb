@@ -18,4 +18,23 @@ class SchedulesController < ApplicationController
     render json: { errors: user.errors.full_messages }, status: :bad_request
   end
 end
+
+def destroy
+    @schedule = Schedule.find_by(id: params["id"])
+    @schedule.destroy
+    render json: { message: "This schedule has been removed." }
+  end
+
+  def update
+    @schedule = Schedule.find_by(id: params["id"])
+    @schedule.update(
+      watering_start_date: params["watering_start_date"] || @schedule.watering_start_date,
+    )
+    if @schedule.valid?
+      render json: { message: "Your schedule has been updated!"}
+    else
+      render json: { errors: @schedule.errors.full_messages },
+             status: :unprocessable_entity
+    end
+  end
 end
