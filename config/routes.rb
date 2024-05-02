@@ -19,5 +19,5 @@ Rails.application.routes.draw do
   get "/schedules" => "schedules#index"    #View plant schedules
   get "/schedules/:id" => "schedules#show"
   patch "/schedules/:id" => "schedules#update"
-  delete "/schedules" => "schedules#destroy"
+  delete "/schedules/:id" => "schedules#destroy"
 end
