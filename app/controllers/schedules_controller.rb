@@ -6,6 +6,11 @@ class SchedulesController < ApplicationController
     render :index
   end
 
+  def show
+    @schedule = Schedule.find_by(id: params[:id])
+    render :show
+  end
+
   def create
     @schedule = Schedule.new(
     user_id: current_user.id,
