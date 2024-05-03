@@ -10,5 +10,5 @@
 
 Plant.create!(
   {
-  name: "Marigold", description: "A tall yellow or orange plant with a bushy flower.", amount_of_sun: 6, days_to_water: 6, image_url: "https://cdn.britannica.com/76/118076-050-756CD4F5/French-marigold.jpg"
+  name: "Balloon Flower", description: "A unique flowering plant. The flower bud will inflate as it grows before opening.", amount_of_sun: 6, days_to_water: 5, image_url: "https://m.media-amazon.com/images/I/91dpDhWNg1L.jpg"
 })
